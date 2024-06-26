@@ -160,11 +160,10 @@ async def _(Mbot,message):
             await m.delete()
             if LOG_GROUP:
                await Mbot.send_message(LOG_GROUP,f"YouTube Shorts {e} {link}")
-               await message.reply(f"400: Sorry, Unable To Find It  try another or report it  to @masterolic or support chat @spotify_supportbot 🤖  ")
+               await message.reply(f"𝚂𝚘𝚛𝚛𝚢 𝙱𝚛𝚘𝚝𝚑𝚎𝚛....𝚆𝚎 𝚐𝚘𝚝 𝚊 𝚎𝚛𝚛𝚘𝚛. 𝙺𝚒𝚗𝚍𝚕𝚢 𝚝𝚛𝚢 𝚊𝚗𝚘𝚝𝚑𝚎𝚛 𝚕𝚒𝚗𝚔 𝚘𝚛 𝚛𝚎𝚝𝚛𝚢 𝚊𝚊𝚏𝚝𝚎𝚛 𝚜𝚘𝚖𝚎𝚝𝚒𝚖𝚎")
                print(traceback.format_exc())
                await Mbot.send_message(LOG_GROUP, traceback.format_exc())
                
-        return await message.reply("Check out @spotify_downloa_bot(music)  @spotifynewss(Channel) \n Please Support Us By /donate To Maintain This Project")
     try:
         if "music.youtube.com" in link:
             link=link.replace("music.youtube.com","youtube.com")
@@ -179,22 +178,21 @@ async def _(Mbot,message):
             link=f"https://youtu.be/{id[0]}"
             PForCopy = await message.reply_photo(f"https://i.ytimg.com/vi/{id[0]}/hqdefault.jpg",caption=f"🎧 Title : `{id[3]}`\n🎤 Artist : `{id[2]}`\n💽 Track No : `{id[1]}`\n💽 Total Track : `{videoInPlaylist}`")
             fileLink = await  ytdl_down(randomdir,link, message.from_user.id)
-            print("down completely")
+            # print("down completely")
             thumnail = await thumb_down(id[0])
           #  await message.reply(fileLink)
         #    await message.reply_audio(fileLink)
-            AForCopy = await message.reply_audio(fileLink,caption=f"[{id[3]}](https://youtu.be/{id[0]}) - {id[2]} Thank you for using - @InstaReelsdownbot",title=id[3].replace("_"," "),performer=id[2],thumb=thumnail,duration=id[4])
+            AForCopy = await message.reply_audio(fileLink,caption=f"[{id[3]}](https://youtu.be/{id[0]}) - {id[2]} ✦ ᴋɪɴᴅʟʏ ᴊᴏɪɴ [•𝖎𝖔 𝕯𝖊𝖛𝖘](https://t.me/botio_devs)",title=id[3].replace("_"," "),performer=id[2],thumb=thumnail,duration=id[4])
             if DUMP_GROUP:
                 await PForCopy.copy(DUMP_GROUP)
                 await AForCopy.copy(DUMP_GROUP)
         await m.delete()
         if os.path.exists(randomdir):
            rmtree(randomdir)
-        await message.reply("Check out @spotify_downloa_bot(music)  @spotifynewss(Channel) \n Please Support Us By /donate To Maintain This Project")
     except Exception as e:
         print(e)
         if LOG_GROUP:
                await Mbot.send_message(LOG_GROUP,f"Youtube {e} {link}")
-               await message.reply(f"400: Sorry, Unable To Find It  try another or report it  to @masterolic or support chat @spotify_supportbot 🤖  ")
+               await message.reply(f"400: Sorry, Unable To Find It  try another 𝚕𝚒𝚗𝚔 ")
                await Mbot.send_message(LOG_GROUP, traceback.format_exc())
             
