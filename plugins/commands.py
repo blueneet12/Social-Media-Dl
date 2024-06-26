@@ -27,8 +27,8 @@ I am A Simple Telegram Bot Can Download From Multiple Social Media Currently Sup
 
 𝙸𝚖 𝚝𝚑𝚎 𝙵𝚊𝚜𝚝𝚎𝚜𝚝 𝙾𝚗𝚎 𝙰𝚕𝚒𝚟𝚎..... 𝙳𝚘𝚗𝚝 𝚎𝚡𝚙𝚎𝚌𝚝 𝚖𝚎 𝚝𝚘 𝚋𝚎 💯 𝚙𝚎𝚛𝚎𝚏𝚌𝚝
 
-𝗠𝗮𝗱𝗲 𝗪𝗶𝘁𝗵 ❣️ 𝗕𝘆 [.𝖎𝖔 𝕯𝖊𝖛𝖘](https://t.me/botio_devs)
-""")
+𝗠𝗮𝗱𝗲 𝗪𝗶𝘁𝗵 ❤️ 𝗕𝘆 [.𝖎𝖔 𝕯𝖊𝖛𝖘](https://t.me/botio_devs)
+""", disable_web_page_preview=True)
           
 @Mbot.on_message(filters.command("help") & filters.incoming)
 async def help(Mbot, message):
