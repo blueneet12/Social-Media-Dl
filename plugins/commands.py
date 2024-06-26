@@ -19,11 +19,23 @@ async def monitor(Mbot, message):
           
 @Mbot.on_message(filters.command("start") & filters.incoming)
 async def start(Mbot, message):
-          await message.reply(f"Hello 👋👋 {message.from_user.mention()}\n I am A Simple Telegram Bot Can Download From Multiple Social Media Currently Support Instagram ,TikTok, Twitter, Facebook , YouTube(Music and shorts) And So On....! ")
+          await message.reply(f"""
+Hello 👋👋 {message.from_user.mention()}
+I am A Simple Telegram Bot Can Download From Multiple Social Media Currently Support Instagram ,TikTok, Twitter, Facebook , YouTube(Music and shorts) And So On....! 
+
+𝚂𝚎𝚗𝚍 𝙼𝚎 𝚊𝚗𝚢 𝚜𝚞𝚙𝚙𝚘𝚛𝚝𝚎𝚍 𝚕𝚒𝚗𝚔𝚜. 𝙰𝚗𝚍 𝚜𝚒𝚝 𝚋𝚊𝚌𝚔. 𝙻𝚎𝚝 𝚖𝚎 𝚜𝚑𝚘𝚎 𝚘𝚏𝚏..... 😎🤏
+
+𝙸𝚖 𝚝𝚑𝚎 𝙵𝚊𝚜𝚝𝚎𝚜𝚝 𝙾𝚗𝚎 𝙰𝚕𝚒𝚟𝚎..... 𝙳𝚘𝚗𝚝 𝚎𝚡𝚙𝚎𝚌𝚝 𝚖𝚎 𝚝𝚘 𝚋𝚎 💯 𝚙𝚎𝚛𝚎𝚏𝚌𝚝
+
+𝗠𝗮𝗱𝗲 𝗪𝗶𝘁𝗵 ❣️ 𝗕𝘆 [.𝖎𝖔 𝕯𝖊𝖛𝖘](https://t.me/botio_devs)
+""")
           
 @Mbot.on_message(filters.command("help") & filters.incoming)
 async def help(Mbot, message):
-          await message.reply("This is user friendly bot so you can simple send your Instagram reel and post links here:) \n eg: `https://www.instagram.com/reel/CZqWDGODoov/?igshid=MzRlODBiNWFlZA==`\n `post:` `https://www.instagram.com/reel/CuCTtORJbDj/?igshid=MzRlODBiNWFlZA==`")
-@Mbot.on_message(filters.command("donate") & filters.command("Donate") & filters.incoming )
-async def donate(_, message):
-       await message.reply_text(f"Donate 🍪 **$** https://www.buymeacoffee.com/Masterolic \n**UPI**`arunrnadh2002@okhdfcbank` \nhttps://www.paypal.me/MasterolicOfficial")
+          await message.reply("""
+ᴛʜɪs ɪs ᴀ sɪᴍᴘʟᴇ ʙᴏᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇᴅɪᴀs ғʀᴏᴍ sᴏᴍᴇ ᴘᴏᴘᴜʟᴀʀ sᴏᴄɪᴀʟ ᴍᴇᴅɪᴀ ᴘʟᴀᴛғᴏʀᴍs.
+ᴡᴇ ᴍᴀᴅᴇ ɪᴛ sɪᴍᴘʟᴇ ᴀs ᴘᴏssɪʙʟᴇ.
+ɪғ ʏᴏᴜ ɢᴜʏs sʜᴏᴡ ʏᴏᴜʀ sᴜᴘᴘᴏʀᴛ ᴡᴇ ᴡɪʟʟ ᴀᴅᴅ ᴍᴏʀᴇ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ᴘʟᴀᴛғᴏʀᴍs.sᴏᴏɴ....!
+
+𝗔𝗹𝗹 𝗪𝗲 𝗡𝗲𝗲𝗱 𝗜𝘀 𝘆𝗼𝘂𝗿 𝗦𝗶𝗻𝗰𝗶𝗲𝗿 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 ❣️
+""")
