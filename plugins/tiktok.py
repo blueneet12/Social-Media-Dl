@@ -25,7 +25,7 @@ async def link_handler(Mbot, message):
                snd_msg=await message.reply(get_api['links'][0]['a'])
                await asyncio.sleep(1)
                try:
-                  dump_file = await message.reply_video(get_api['links'][0]['a'],✦ ᴋɪɴᴅʟʏ ᴊᴏɪɴ [•𝖎𝖔 𝕯𝖊𝖛𝖘](https://t.me/botio_devs)")
+                  dump_file = await message.reply_video(get_api['links'][0]['a'], caption= "✦ ᴋɪɴᴅʟʏ ᴊᴏɪɴ [•𝖎𝖔 𝕯𝖊𝖛𝖘](https://t.me/botio_devs)")
                   await snd_msg.delete()
                except Exception:
                    pass
