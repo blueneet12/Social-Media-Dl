@@ -10,23 +10,23 @@ async def link_handler(Mbot, message):
        m = await message.reply_text("⏳")
        get_api=requests.get(f"https://yasirapi.eu.org/fbdl?link={link}").json()
        if get_api['success'] == "false":
-          return await message.reply("Invalid TikTok video url. Please try again :)")
+          return await message.reply("Invalid 𝚏𝚊𝚌𝚎𝚋𝚘𝚘𝚔 video url. Please try again :)")
        if get_api['success'] == "ok":
           if get_api.get('result').get('hd'):
              try:
-                 dump_file = await message.reply_video(get_api['result']['hd'],caption="Thank you for using - @InstaReelsdownbot")
+                 dump_file = await message.reply_video(get_api['result']['hd'],caption="✦ ᴋɪɴᴅʟʏ ᴊᴏɪɴ [•𝖎𝖔 𝕯𝖊𝖛𝖘](https://t.me/botio_devs)")
              except KeyError:
                  pass 
              except Exception:
                  try:
                      sndmsg = await message.reply(get_api['result']['hd'])
                      await asyncio.sleep(1)
-                     dump_file = await message.reply_video(get_api['result']['hd'],caption="Thank you for using - @InstaReelsdownbot")
+                     dump_file = await message.reply_video(get_api['result']['hd'],caption="✦ ᴋɪɴᴅʟʏ ᴊᴏɪɴ [•𝖎𝖔 𝕯𝖊𝖛𝖘](https://t.me/botio_devs)")
                      await sndmsg.delete()
                  except Exception:
                      try:
                         down_file = wget.download(get_api['result']['hd'])
-                        await message.reply_video(down_file,caption="Thank you for using - @InstaReelsdownbot")
+                        await message.reply_video(down_file,caption="✦ ᴋɪɴᴅʟʏ ᴊᴏɪɴ [•𝖎𝖔 𝕯𝖊𝖛𝖘](https://t.me/botio_devs)")
                         await sndmsg.delete()
                         os.remove(down_file)
                      except:
@@ -34,19 +34,19 @@ async def link_handler(Mbot, message):
           else: 
              if get_api.get('result').get('sd'):
                try:
-                   dump_file = await message.reply_video(get_api['result']['sd'],caption="Thank you for using - @InstaReelsdownbot")
+                   dump_file = await message.reply_video(get_api['result']['sd'],caption="✦ ᴋɪɴᴅʟʏ ᴊᴏɪɴ [•𝖎𝖔 𝕯𝖊𝖛𝖘](https://t.me/botio_devs)")
                except KeyError:
                    pass
                except Exception:
                    try:
                        sndmsg = await message.reply(get_api['result']['sd'])
                        await asyncio.sleep(1)
-                       dump_file = await message.reply_video(get_api['result']['sd'],caption="Thank you for using - @InstaReelsdownbot")
+                       dump_file = await message.reply_video(get_api['result']['sd'],caption="✦ ᴋɪɴᴅʟʏ ᴊᴏɪɴ [•𝖎𝖔 𝕯𝖊𝖛𝖘](https://t.me/botio_devs)")
                        await sndmsg.delete()
                    except Exception:
                       try:
                         down_file = wget.download(get_api['result']['sd'])
-                        await message.reply_video(down_file,caption="Thank you for using - @InstaReelsdownbot")
+                        await message.reply_video(down_file,caption="✦ ᴋɪɴᴅʟʏ ᴊᴏɪɴ [•𝖎𝖔 𝕯𝖊𝖛𝖘](https://t.me/botio_devs)")
                         await sndmsg.delete()
                         os.remove(down_file)
                       except:
