@@ -139,7 +139,8 @@ async def getIds(video):
 @Mbot.on_message(filters.regex(r'https?://.*youtube[^\s]+') & filters.incoming|filters.regex(r'(https?:\/\/(?:www\.)?youtu\.?be(?:\.com)?\/.*)') & filters.incoming)
 async def _(Mbot,message):
     try:
-        m = await message.reply_sticker("CAACAgIAAxkBATWhF2Qz1Y-FKIKqlw88oYgN8N82FtC8AAJnAAPb234AAT3fFO9hR5GfHgQ")
+       return await message.reply_text("**Sorry YouTube Downloading Currently Disabled  We fill Fix it soo**")
+        # m = await message.reply_sticker("CAACAgIAAxkBATWhF2Qz1Y-FKIKqlw88oYgN8N82FtC8AAJnAAPb234AAT3fFO9hR5GfHgQ")
     except:
         pass
     link = message.matches[0].group(0)
