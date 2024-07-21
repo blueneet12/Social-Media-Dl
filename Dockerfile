@@ -6,7 +6,7 @@ RUN pip3 install --upgrade pip
 
 RUN mkdir /Insta-DL
 WORKDIR /Insta-DL
-#RUN apt update && apt upgrade -y && apt install ffmpeg python3 python3-pip apt-utils -y
+RUN apt update && apt upgrade -y && apt install ffmpeg python3 python3-pip apt-utils -y
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -U -r requirements.txt
 COPY . .
