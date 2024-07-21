@@ -1,6 +1,7 @@
 FROM python:3.10-slim-buster
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends python3-pip git \
+    && apt-get install -y --no-install-recommends \
+    python3-pip git build-essential libssl-dev \
     && rm -rf /var/lib/apt/lists/*
 RUN pip3 install --upgrade pip
 
