@@ -4,6 +4,6 @@ requests
 python-dotenv
 tgcrypto
 wget
-git+https://github.com/yt-dlp/yt-dlp/
+git+https://github.com/appujohn007/yt-dlp.git
 youtube-search
 apscheduler
